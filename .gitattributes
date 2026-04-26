@@ -1,0 +1,13 @@
+# Store binary teaching assets with Git LFS.
+*.ppt filter=lfs diff=lfs merge=lfs -text
+*.pptx filter=lfs diff=lfs merge=lfs -text
+*.doc filter=lfs diff=lfs merge=lfs -text
+*.docx filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+
+# Keep scripts and notes as normal text.
+*.md text eol=lf
+*.py text eol=lf
+*.ps1 text eol=crlf

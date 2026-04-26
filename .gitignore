@@ -1,0 +1,25 @@
+# Keep this repository focused on the two synced projects.
+/*
+
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/lesson plan/
+!/lesson plan/**
+!/powerpoint/
+!/powerpoint/**
+
+# Generated previews and local scratch output.
+/lesson plan/ppt_preview/
+/tmp/
+/新建文件夹/
+
+# Office temporary files.
+~$*
+*.tmp
+*.bak
+
+# OS/editor noise.
+.DS_Store
+Thumbs.db
+desktop.ini

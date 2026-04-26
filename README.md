@@ -1,46 +1,53 @@
 # Teaching Workspace Sync
 
-This private repository is intended to sync two working folders between computers:
+This private repository syncs teaching materials between computers.
 
-- `lesson plan`
+- `lesson-plan`
 - `powerpoint`
+- `archive`
 
 Large Office and image assets are configured for Git LFS. Install Git LFS before the first commit or clone.
 
-## First Setup On This Computer
+## Repository Location
 
-```powershell
-git init
-git lfs install
-git add .gitattributes .gitignore README.md "lesson plan" "powerpoint"
-git commit -m "Initial teaching workspace sync"
-git branch -M main
-git remote add origin https://github.com/morille/YOUR-PRIVATE-REPO.git
-git push -u origin main
+Use the same local path on each computer:
+
+```text
+D:\codex\teaching-workspace
 ```
 
 ## Clone On Another Computer
 
 ```powershell
 git lfs install
-git clone https://github.com/morille/YOUR-PRIVATE-REPO.git
+git clone https://github.com/morille/teaching-workspace.git D:\codex\teaching-workspace
 ```
 
 ## Daily Workflow
 
+Start work:
+
+```powershell
+cd D:\codex\teaching-workspace
+git pull
+```
+
 Before switching computers:
 
 ```powershell
+cd D:\codex\teaching-workspace
 git status
-git add "lesson plan" "powerpoint"
+git add .
 git commit -m "Update teaching materials"
 git push
 ```
 
-After switching computers:
+## Structure
 
-```powershell
-git pull
+```text
+lesson-plan/   Course lesson docs, decks, notes, references, and scripts
+powerpoint/    Reusable templates and PowerPoint projects
+archive/       Old versions and reference copies kept out of the main workflow
 ```
 
-The `lesson plan/ppt_preview` folder is ignored because it can be regenerated from the PowerPoint file.
+Generated preview folders such as `ppt_preview` should not be committed because they can be regenerated.

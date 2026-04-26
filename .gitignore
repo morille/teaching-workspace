@@ -1,17 +1,21 @@
-# Keep this repository focused on the two synced projects.
+# Keep this repository focused on the synced teaching workspace.
 /*
 
 !/.gitignore
 !/.gitattributes
 !/README.md
-!/lesson plan/
-!/lesson plan/**
+!/lesson-plan/
+!/lesson-plan/**
 !/powerpoint/
 !/powerpoint/**
+!/archive/
+!/archive/**
 
 # Generated previews and local scratch output.
-/lesson plan/ppt_preview/
+/lesson-plan/**/ppt_preview/
+/lesson-plan/**/ppt-preview/
 /tmp/
+/tools/
 /新建文件夹/
 
 # Office temporary files.

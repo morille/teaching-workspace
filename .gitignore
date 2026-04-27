@@ -10,6 +10,8 @@
 !/powerpoint/**
 !/archive/
 !/archive/**
+!/skills/
+!/skills/**
 
 # Generated previews and local scratch output.
 /lesson-plan/**/ppt_preview/

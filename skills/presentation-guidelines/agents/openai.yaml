@@ -1,0 +1,4 @@
+interface:
+  display_name: "Presentation Guidelines"
+  short_description: "Reusable slide quality rules for readable, reference-driven decks"
+  default_prompt: "Use presentation-guidelines to create or review a slide deck with strong readability, clean wrapping, semantic visuals, and varied reference-driven layouts."

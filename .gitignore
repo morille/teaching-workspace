@@ -16,6 +16,10 @@
 # Generated previews and local scratch output.
 /lesson-plan/**/ppt_preview/
 /lesson-plan/**/ppt-preview/
+/lesson-plan/**/rendered/
+/lesson-plan/**/rendered-updated/
+/lesson-plan/**/__pycache__/
+/lesson-plan/**/*.pyc
 /tmp/
 /tools/
 /新建文件夹/

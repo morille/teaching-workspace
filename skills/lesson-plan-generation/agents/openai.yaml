@@ -1,4 +1,0 @@
-interface:
-  display_name: "Lesson Plan Generation"
-  short_description: "Generate formatted lesson-plan DOCX files."
-  default_prompt: "Use this skill to create or revise Chinese course lesson-plan DOCX files while preserving the approved teaching-plan template formatting."
